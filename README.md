@@ -1,3 +1,3 @@
 # hmmm217.github.io
 
-{begin}[./index.html]
+[Относительная ссылка на документ](../index.html)
