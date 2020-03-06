@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,tbody {
+    width: 960px;
+    height: 360px;
+}
+
+td {
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+input {
+    font-size: 25px;
+    border: 2px solid goldenrod;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(84, 84, 84);
+}
+
+input:focus {
+    outline: none;
+}
+
+.numbers {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    font-size: 14px;
+    color: teal;
+}
+
+.questions {
+    margin-top: 40px;
+    width: 960px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.questions span {
+    font-size: 32px;
+    font-weight: bold;
+}
