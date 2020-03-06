@@ -1,4 +1,4 @@
-alert("Пожалуйста откройте с компьютера")
+alert("Рекомендуется использовать компьютер")
 var h1 = document.getElementsByClassName("1H");
 var v1 = document.getElementsByClassName("1V");
 var h3 = document.getElementsByClassName("3H");
