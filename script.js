@@ -37,25 +37,20 @@ function check1(word,i) {
                 flajok[i][j] = false;
             }
         });
-}
-function check2(word,i) {
-    var ff = true;
-    flajok[i].forEach(elem => {
-        ff*=elem;
-    });
-    if(ff) {
-        word.forEach((element,j) => {
-            h[i][j].getElementsByTagName("input")[0].style.backgroundColor = "goldenrod";
-            //h1[i].getElementsByTagName("input")[0].style.color = "goldenrod";
-            h[i][j].getElementsByTagName("input")[0].disabled = true;
-        })
-    }
+        var ff = true;
+        flajok[i].forEach(elem => {
+            ff*=elem;
+        });
+        if(ff) {
+            word.forEach((element,j) => {
+                h[i][j].getElementsByTagName("input")[0].style.backgroundColor = "goldenrod";
+                //h1[i].getElementsByTagName("input")[0].style.color = "goldenrod";
+                h[i][j].getElementsByTagName("input")[0].disabled = true;
+            })
+        }
 }
 words.forEach((word,i) => {
     setInterval(()=>{
         return check1(word,i)
     },100);
-    setInterval(()=>{
-        return check2(word,i)
-    },500);
 })
